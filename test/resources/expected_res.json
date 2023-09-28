@@ -1,0 +1,1 @@
+{"pandoc-api-version":[1,23,1],"meta":{},"blocks":[{"t":"CodeBlock","c":[["",["c"],[]],"#include <stdio.h>\n#include <stdbool.h>\n\nint main() {\nprintf(\"My snippet\\n\");\n}\n"]}]}

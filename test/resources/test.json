@@ -1,0 +1,32 @@
+{
+  "pandoc-api-version": [
+    1,
+    23,
+    1
+  ],
+  "meta": {},
+  "blocks": [
+    {
+      "t": "CodeBlock",
+      "c": [
+        [
+          "",
+          [
+            "c"
+          ],
+          [
+            [
+              "include",
+              "./resources/snippet_sample.c"
+            ],
+            [
+              "snippet",
+              "solution"
+            ]
+          ]
+        ],
+        ""
+      ]
+    }
+  ]
+}
