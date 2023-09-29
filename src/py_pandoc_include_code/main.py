@@ -16,7 +16,13 @@ def action(elem, _):
     with open(path, "r") as f:
         lines = f.readlines()
 
+    code_lines = "".join(lines)
+
     if snippet is not None:
+        # if snippet is not none include only the lines between
+        # f"// start snippet {snippet}"
+        # and
+        # f"// end snippet {snippet}"
         code_lines = ""
         read = False
         for line in lines:
@@ -31,9 +37,6 @@ def action(elem, _):
 
             if read:
                 code_lines += f"{line}\n"
-
-    else:
-        code_lines = "".join(lines)
 
     return CodeBlock(code_lines, elem.identifier, elem.classes, {})
 

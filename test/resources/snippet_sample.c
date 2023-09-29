@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main() {
+int foo() {
     printf("My snippet\n");
 }
 // end snippet solution
