@@ -56,3 +56,14 @@ Going back to the previous example, you can include the snippet `solution` in yo
     ```{.c include=main.c snippet=solution}
 
     ```
+
+## Include py-pandoc-include-code in your pandoc pipeline
+After the installation, you can add `py-pandoc-include-code` simply by using the `--filter` option e.g.:
+
+```bash
+pandoc  --filter py-pandoc-include-code  -o out.pdf my_source_md.md
+
+```
+
+*Note*: `py-pandoc-include-code` will be installed through `pip` in your current python environment, thus recall to use 
+the same environment also when you call `pandoc`.
