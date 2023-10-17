@@ -26,17 +26,17 @@ def action(elem, _):
         code_lines = ""
         read = False
         for line in lines:
-            line = line.strip()
+            line_stripped = line.strip()
 
-            if read is False and line == f"// start snippet {snippet}":
+            if read is False and line_stripped == f"// start snippet {snippet}":
                 read = True
                 continue
 
-            if read is True and line == f"// end snippet {snippet}":
+            if read is True and line_stripped == f"// end snippet {snippet}":
                 break
 
             if read:
-                code_lines += f"{line}\n"
+                code_lines += f"{line}"
 
     return CodeBlock(code_lines, elem.identifier, elem.classes, {})
 
